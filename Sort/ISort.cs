@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Sort
+namespace Sorting
 {
     public interface ISort
     {
-        void Sort(int[] a); 
+        void Sort(IComparable[] a); 
     }
 }

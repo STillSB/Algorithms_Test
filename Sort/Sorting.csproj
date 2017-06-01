@@ -7,8 +7,8 @@
     <ProjectGuid>{D9AA0759-5938-4448-A587-71497F9EF6C0}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sort</RootNamespace>
-    <AssemblyName>Sort</AssemblyName>
+    <RootNamespace>Sorting</RootNamespace>
+    <AssemblyName>Sorting</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -38,6 +38,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Insertion.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Selection.cs" />
     <Compile Include="Utils.cs" />

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Sort
+namespace Sorting
 {
     public static class Utils
     {
@@ -17,7 +17,7 @@ namespace Sort
             Console.ReadKey();
         }
 
-        public static bool IsSorted(int[] a)
+        public static bool IsSorted(IComparable[] a)
         {
             for (int i = 0; i < a.Length - 1; i++)
             {
@@ -27,7 +27,7 @@ namespace Sort
             return true;
         }
 
-        public static void Dump(int[] a)
+        public static void Dump(IComparable[] a)
         {
             for (int i = 0; i < a.Length; i++ )
             {
@@ -36,7 +36,7 @@ namespace Sort
             Console.ReadKey();
         }
 
-        public static void Exchange(int[]a, int i, int j)
+        public static void Exchange(IComparable[]a, int i, int j)
         {
             var tmp = a[i];
             a[i] = a[j];
