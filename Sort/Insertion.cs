@@ -24,7 +24,7 @@ namespace Sorting
             for (int i = 1; i < a.Length; i++)
             {
                 // 始终保持索引左边的所有元素是有序的
-                for (int j = i; j > 0 && Utils.Less(a[j], a[j-1]); j--)
+                for (int j = i; j >= 1 && Utils.Less(a[j], a[j-1]); j--)
                 {
                     Utils.Exchange(a, j, j - 1);
                 }

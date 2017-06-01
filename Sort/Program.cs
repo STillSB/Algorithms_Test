@@ -9,12 +9,20 @@ namespace Sorting
     {
         public static void Main()
         {
-            IComparable[] a = { 10, 7, 1, 3, 2, 4, 8, 5, 6, 9, };
-            new Insertion().Sort(a);
-            float c = 312431214.99f;
-            Utils.Print(c.ToString());
-            Utils.Print(String.Format("{0:N0}", c));
-            //Utils.Dump(a);
+            IComparable[] a = GetRandomArray(30);
+            new Shell().Sort(a);
+            Utils.Dump(a);
+        }
+
+        public static IComparable[] GetRandomArray(int maxCount)
+        {
+            IComparable[] ret = new IComparable[maxCount];
+            for (int i = 0; i < maxCount; i++)
+                ret[i] = i;
+            Random rand = new Random(DateTime.Now.Second);
+            for (int i = 0; i < maxCount; i++)
+                Utils.Exchange(ret, i, rand.Next(0, maxCount));
+            return ret;
         }
     }
 }
